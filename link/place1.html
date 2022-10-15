@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../cssp/Adventure.css"> -->
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+        #container img{
+         width: 100%;
+         height: 100vh;
+         content: "";
+         display: flex;
+    }
+    #container .heading{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 64%;
+    left: 10%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    
+    }
+    #container p{
+    text-align: center;
+    margin:20px 0px 40px 40px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #footer p{
+        text-align: center;
+        background-color: black;
+        color: rgb(200, 199, 199);
+        margin: 0px;
+        }
+        
+        
+        #main-container{
+            height: 120vh;
+            width: 100%;
+            background-color: rgb(74, 73, 73);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -10px;
+        }
+        #main-container h1{
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: block;
+            color: white;
+            margin-top:-200px ;
+        
+        }
+        .border{
+           /* border: 1px solid red;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 300px;
+            width: 100%;
+            margin-bottom: 200px;
+        }
+        #main-container .boxes img{
+            height: 180px;
+            width: 200px;
+            border-radius: 5px;
+            margin: 10px;
+            margin-top:25px ;
+        }
+        #main-container .boxes img:hover{
+            opacity: .5;
+        }
+        #main-container .boxes p{
+            background-color: black;
+            color: white;
+            width:200px ;
+            margin-left: 10px;
+            margin-top: -10px;
+            border-radius:5px ;
+            font-size: 15px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #footer p{
+            text-align: center;
+            background-color: black;
+            color: rgb(200, 199, 199);
+            margin-top: 5px;
+            margin-bottom: -10px;
+            }
+            #wrap-box{
+                flex: wrap;
+            }
+
+            @media(max-width:391px){
+                #container img{
+                    width: 120%;
+                    height: 100vh;
+                    content: "";
+                    /*display: flex;*/
+               }
+               #wrap-box{
+                border: 2px solid red;
+
+               }
+        
+               #main-container{
+                   width: 120%;
+                   display: flex;
+                   flex-direction: column;
+                   height: 140rem;
+               }
+               #main-container h1{
+                   margin-top: -65rem;
+               }
+               
+               #main-container.boxes{
+            
+                width: 50rem;
+               }
+               #footer p{
+                width: 120%;
+               }
+            }
+</style>
+<body>
+    <div id="container">
+        <img src="../img/d3.jpeg" alt="">
+      <h1 class="heading">Delhi</h1>
+      <p>Spirit of Adventure/ Allure of AdventureScale the heights of thrill, or plummet to the depths of excitement or if you're truly daring, survey gorgeous lands and waters, while suspended in the sky. All this and more awaits you as you explore land, water and sky adventures in the country. From trekking, mountain biking and mountaineering in the secluded snow-capped Himalayas to surfing, rafting, scuba diving and snorkelling, there are a multitude of options for thrill seekers.
+
+    </p>
+    </div>
+
+    <section>
+        <div id="main-container">
+            <div id="wrap-box">
+            <h1>Popular Destinations In Delhi</h1>
+            <div class="border">
+            <div class="boxes"><img src="../img/d1.jpeg" alt=""><p>Manali</p></div>
+            <div class="boxes"><img src="../img/d2.jpeg" alt=""><p>Dharmshala</p></div>
+            <div class="boxes"><img src="../img/d3.jpeg" alt=""><p>Ladakh</p></div>
+            <div class="boxes"><img src="../img/d4.jpeg" alt=""><p>Srinagar</p></div>
+            <div class="boxes"><img src="../img/d5.jpeg" alt=""><p>Shimla</p></div>
+            <div class="boxes"><img src="../img/d6.jpeg" alt=""><p>name</p></div>
+            <div class="boxes"><img src="../img/d7.jpeg" alt=""><p>Darjeeling</p></div>
+            <div class="boxes"><img src="../img/d8.jpeg" alt=""><p>Kedarnath</p></div>
+            <div class="boxes"><img src="../img/d9.jpeg" alt=""><p>Kedarnath</p></div>
+            <div class="boxes"><img src="../img/d10.jpeg" alt=""><p>Kedarnath</p></div>
+            <div class="boxes"><img src="../img/d11.jpeg" alt=""><p>Kedarnath</p></div>
+            <div class="boxes"><img src="../img/d12.jpeg" alt=""><p>Kedarnath</p></div>
+            <div class="boxes"><img src="../img/d13.jpeg" alt=""><p>Kedarnath</p></div>
+            <div class="boxes"><img src="../img/d14.jpeg" alt=""><p>Kedarnath</p></div>
+            <div class="boxes"><img src="../img/d15.jpeg" alt=""><p>Kedarnath</p></div>
+            <div class="boxes"><img src="../img/d16.jpeg" alt=""><p>Kedarnath</p></div>
+        </div>
+    </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>All rights reserved &Incredible India</p>
+    </footer>
+</body>
+</html>

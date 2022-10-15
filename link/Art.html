@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../cssp/Adventure.css"> -->
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+        #container img{
+         width: 100%;
+         height: 100vh;
+         content: "";
+         display: flex;
+    }
+    #container .heading{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 64%;
+    left: 10%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    
+    }
+    #container p{
+    text-align: center;
+    margin:20px 0px 40px 40px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #footer p{
+        text-align: center;
+        background-color: black;
+        color: rgb(200, 199, 199);
+        margin: 0px;
+        }
+        
+        
+        #main-container{
+            height: 500px;
+            width: 100%;
+            background-color: rgb(74, 73, 73);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #main-container h1{
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: block;
+            color: white;
+            margin-left: 20px;
+        }
+        .border{
+            /*border: 1px solid red;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 300px;
+            width: 80%;
+            margin-bottom: 200px;
+        }
+        #main-container .boxes img{
+            height: 200px;
+            width: 200px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        #main-container .boxes img:hover{
+            opacity: .5;
+            }
+        #main-container .boxes p{
+            background-color: black;
+            color: white;
+            width:200px ;
+            margin-left: 10px;
+            margin-top: -10px;
+            border-radius:5px ;
+            font-size: large;
+            text-align: center;
+        }
+
+
+        @media(max-width:391px){
+            #container img{
+                width: 120%;
+                height: 100vh;
+                content: "";
+                /*display: flex;*/
+           }
+    
+           #main-container{
+            
+               width: 120%;
+               display: flex;
+               flex-direction: column;
+               height: 140rem;
+           }
+           #main-container h1{
+               margin-top: -100rem;
+           }
+           
+           #main-container.boxes{
+        
+            width: 50rem;
+           }
+           #footer p{
+            width: 120%;
+           }
+        }
+</style>
+<body>
+    <div id="container">
+        <img src="../img/art.jpeg" alt="">
+      <h1 class="heading">Art</h1>
+      <p>The land where classical melodies merge seamlessly with a mesmerising mosaic of exquisite paintings, ancient weaves and other handicrafts, divine dance forms, fascinating festivals and scintillating sculptures, India is a vibrant potpourri of arts and crafts. With each of its states and union territories bursting with ethnic flavours that multiply at every turn, the country sparkles with vitality and vivacity. </p>
+    </div>
+
+    <section>
+        <div id="main-container">
+            <h1>Popular Arte and culture In India</h1>
+            <div class="border">
+            <div class="boxes"><img src="../img/a1.jpeg" alt=""><p>Bidar</p></div>
+            <div class="boxes"><img src="../img/h2.jpeg" alt=""><p>Delhi</p></div>
+            <div class="boxes"><img src="../img/a2.jpeg" alt=""><p>Kolhapur</p></div>
+            <div class="boxes"><img src="../img/h4.jpeg" alt=""><p>Varanasi</p></div>
+            <div class="boxes"><img src="../img/h5.jpeg" alt=""><p>Jaipur</p></div>
+            <div class="boxes"><img src="../img/pt7.jpeg" alt=""><p>Agra</p></div>
+            <!-- <div class="boxes"><img src="../img/h7.jpeg" alt=""><p>name</p></div>
+            <div class="boxes"><img src="../img/h8.jpeg" alt=""><p>name</p></div> -->
+        </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>All rights reserved &copy Incredible India</p>
+    </footer>
+</body>
+</html>

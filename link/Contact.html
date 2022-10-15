@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: aquamarine;
+    }
+    .container{
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+        height: 500px;
+        width: 300px;
+        
+    }
+    h1{
+        text-align: center;
+        margin: 0px;
+    }
+    input{
+        width: 200px;
+        margin: 10px 0px 20px;
+        padding: 5px;
+        border: 2px solid gray;
+        font-size: 20px;
+    }
+    input[type="submit"]{
+        width: 200px;
+        background-color: rgb(0, 119, 255);
+        border: 0px;
+        color: white;
+        font-size: 25px;
+    }
+    .error{
+        color: red;
+        margin-top:-15px ;
+        margin-bottom:0px ;
+        text-align: left;
+        
+        height: 10px;
+        margin-left: 40px;
+    }
+</style>
+<body>
+    <div class="container">
+    <h1>Login</h1>
+   <form action="" onsubmit="return validateForm()" >
+       <input type="text" placeholder="User name" id="uname"><br>
+       <p id="userError" class="error"></p>
+       <input type="password" placeholder="Password" id="ps"><br>
+       <p id="passError" class="error"></p>
+       <input type="text" name="" placeholder="Enter your Email" id="email">
+       <p id="emailError" class="error"></p>
+       <input type="integer" placeholder=" Mobile number" id="mob"> 
+        <p id="mobileError" class="error"></p>
+       <input type="submit" id="">
+    </form> 
+
+    <script>
+        let username = document.getElementById("uname");
+        let password = document.getElementById("ps");
+        let mobile = document.getElementById("mob");
+        let email = document.getElementById("email");
+        let flag = 1;
+        function validateForm()
+        {
+            if(username.value =="")
+            {
+                document.getElementById("userError").innerHTML ="Name is empty"
+            flag =0;
+            }
+            else if(username.value.length <3)
+            {
+                document.getElementById("userError").innerHTML ="Name should be more than 3 character"
+            flag =0;
+            }
+            else{
+                document.getElementById("userError").innerHTML ="";
+                flag = 1;
+            }
+            if(password.value.length <6)
+            {
+                document.getElementById("passError").innerHTML ="Password should be more than 5 digit" 
+            flag =0; 
+            }
+            else if(password.value=="")
+            {
+                document.getElementById("passError").innerHTML ="Password shouldn't be blank"  
+                flag =0; 
+            }
+            else{
+                document.getElementById("passError").innerHTML ="";
+                flag = 1;
+            }
+          //  return false;
+
+           if(mobile.value=="")
+              {
+                  document.getElementById("mobileError").innerHTML ="Can't be blank"
+                  flag = 0;
+              }
+          else if(isNaN(mobile.value) )
+              {
+                  document.getElementById("mobileError").innerHTML ="Please enter numeric number"
+                   flag = 0;
+              }
+              
+              else if(mobile.value.length!=10){
+                  document.getElementById("mobileError").innerHTML = "Atleast 10 number";
+                  flag =0;
+              }
+              else{
+                  document.getElementById("mobileError").innerHTML=""
+                  flag = 1;
+              }
+              
+              
+             if(email.value.length ==0){
+                document.getElementById("emailError").innerHTML = "Please enter your email ";
+                       flag =0;      
+            }
+            else if(email.value.indexOf('@')<=0)
+            {
+              document.getElementById("emailError").innerHTML = "@ shouldn't be at satarting position";
+              flag =0;
+            }
+              else if((email.value.charAt(email.value.length-4)!=".") && (email.value.charAt(email.value.length-3)!="."))
+              {
+                  
+                document.getElementById("emailError").innerHTML = "Please use '.'at right position ";
+               flag =0;  
+            }
+            else{
+                document.getElementById("emailError").innerHTML=""
+                flag =1;
+            }
+              if(flag){
+                  return true;
+              }
+              else{
+                  return false;
+              }
+        }
+
+    </script>
+</div>
+</body>
+</html>

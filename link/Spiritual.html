@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../cssp/Adventure.css"> -->
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+        #container img{
+         width: 100%;
+         height: 100vh;
+         content: "";
+         display: flex;
+    }
+    #container .heading{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 64%;
+    left: 10%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    
+    }
+    #container p{
+    text-align: center;
+    margin:20px 0px 40px 40px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #footer p{
+        text-align: center;
+        background-color: black;
+        color: rgb(200, 199, 199);
+        margin: 0px;
+        }
+        
+        
+        #main-container{
+            height: 500px;
+            width: 100%;
+            background-color: rgb(74, 73, 73);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #main-container h1{
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: block;
+            color: white;
+            margin-left: 10px;
+        }
+        .border{
+           /*border: 1px solid red;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 300px;
+            width: 95%;
+            margin-bottom: 200px;
+        }
+        #main-container .boxes img{
+            height: 180px;
+            width: 200px;
+            border-radius: 5px;
+            margin: 10px;
+            margin-top: 20px;
+        }
+        #main-container .boxes img:hover{
+            opacity: .5;
+            }
+        #main-container .boxes p{
+            background-color: black;
+            color: white;
+            width:200px ;
+            margin-left: 10px;
+            margin-top: -10px;
+            border-radius:5px ;
+            font-size: large;
+            text-align: center;
+        }
+
+        @media(max-width:391px){
+            #container img{
+                width: 120%;
+                height: 100vh;
+                content: "";
+                /*display: flex;*/
+           }
+    
+           #main-container{
+            
+               width: 120%;
+               display: flex;
+               flex-direction: column;
+               height: 140rem;
+           }
+           #main-container h1{
+               margin-top: -100rem;
+           }
+           
+           #main-container.boxes{
+        
+            width: 50rem;
+           }
+           #footer p{
+            width: 120%;
+           }
+        }
+</style>
+<body>
+    <div id="container">
+        <img src="../img/spiritual.jpeg" alt="">
+      <h1 class="heading">Spiritual</h1>
+      <p>India is its billion people. And it is safe to say that these people define what spirituality in India is. The most prominent religions in the country are Hinduism, Islam, Christianity, Buddhism, Sikhism and Jainism. Apart from these there are several other schools of thoughts. The country is filled with many spiritual destinations which should not be missed by anyone looking for the true Indian experience. These are open and welcome to everyone.</p>
+    </div>
+
+    <section>
+        <div id="main-container">
+            <h1>Popular Spiritual Destinations In India</h1>
+            <div class="border">
+            <div class="boxes"><img src="../img/sp1.jpeg" alt=""><p>Haridwar</p></div>
+            <div class="boxes"><img src="../img/sp2.jpeg" alt=""><p>Rishikesh</p></div>
+            <div class="boxes"><img src="../img/sp3.jpeg" alt=""><p>Kedarnath</p></div>
+            <div class="boxes"><img src="../img/sp4.jpeg" alt=""><p>Rameshwar</p></div>
+            <div class="boxes"><img src="../img/sp5.jpeg" alt=""><p>Madurai</p></div>
+            <div class="boxes"><img src="../img/sp6.jpeg" alt=""><p>Thriuvantpuram</p></div>
+            <div class="boxes"><img src="../img/sp7.jpeg" alt=""><p>Bodh Gaya</p></div>
+            <div class="boxes"><img src="../img/sp8.jpeg" alt=""><p>Gaya</p></div>
+            <!-- <div class="boxes"><img src="../img/sp9.jpeg" alt=""><p>Varanasi</p></div> -->
+        </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>All rights reserved &Incredible India</p>
+    </footer>
+</body>
+</html>
